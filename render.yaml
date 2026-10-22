@@ -1,0 +1,15 @@
+﻿services:
+  - type: web
+    name: campus-runner-api
+    runtime: node
+    plan: free
+    buildCommand: echo "zero dependencies, nothing to build"
+    startCommand: node server.js
+    healthCheckPath: /ping
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: CAMPUS_ADMIN_PASSWORD
+        generateValue: true
+      - key: CAMPUS_DEV
+        value: "0"

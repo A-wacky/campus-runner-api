@@ -1,0 +1,13 @@
+﻿{
+  "name": "campus-runner-api",
+  "version": "1.5.3",
+  "private": true,
+  "description": "校园跑跑后端（零依赖 Node.js，REST + WebSocket）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
